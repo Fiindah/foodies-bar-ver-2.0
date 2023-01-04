@@ -1,0 +1,128 @@
+.posts {
+  display: grid;
+  grid-row-gap: 16px;
+}
+
+@media screen and (max-width: 425px) {
+  .hero-title {
+    font-size: 34px;
+  }
+  .hero-tagline {
+    font-size: 16px;
+  }
+  
+}
+
+@media screen and (max-width: 499px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 16px;
+    align-items: center;
+  }
+
+  .nav {
+    z-index: 10;
+    background-color: hsl(0, 0%, 100%);
+    width: 300px;
+    height: 500px;
+    opacity: 95%;
+    position: absolute;
+
+    /* This trasform moves the drawer off canvas. */
+    -webkit-transform: translate(-300px, 0);
+    transform: translate(-300px, 0);
+
+    /* Optionally, we animate the drawer. */
+    transition: transform 0.3s ease;
+  }
+
+  .open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+
+  .nav-item {
+    display: list-item;
+    border-bottom: 1px solid #E0E0E0;
+    width: 100%;
+    text-align: left;
+    padding-left: 10%;
+  }
+  .header-title {
+    margin-left: 10%;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .header-menu {
+    display: none;
+  }
+  
+  .header-outer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header {
+    width: 40%;
+  }
+  .header-title {
+    margin-left: 10%;
+  }
+  
+  .nav-list {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 4px 16px;
+  }
+ 
+}
+
+@media screen and (min-width: 600px) {
+  .nav-item {
+    padding-right: 4px;
+  }
+  .posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 16px;
+  }
+  .post-item-content {
+    padding: 0px 0px 0px 0px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 16px;
+  }
+  .post-item-content {
+    padding: 0px 0px 0px 0px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    max-width: 1200px;
+  }
+  .nav {
+    width: 22%;
+    margin-right: 5%;
+  }
+  .header-title {
+    margin-left: 20%;
+  }
+}
