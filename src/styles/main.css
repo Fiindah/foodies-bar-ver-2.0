@@ -17,17 +17,24 @@ body {
   color: #424242;
 }
 
+a {
+  display: inline-block;
+  min-height: 44px;
+  min-width: 44px;
+}
+
 /*
 * Header
 */
 .skip-link {
   position: absolute;
-  top: -40px;
+  top: -44px;
   left: 0;
   background-color: hsl(356, 100%, 66%);
   color: white;
   padding: 8px;
   z-index: 100;
+  text-decoration: none;
 }
 
 .skip-link:focus {
@@ -39,7 +46,7 @@ body {
  */
 
 .header {
-  min-height: 56px;
+  min-height: 44px;
   transition: min-height 0.3s;
 }
 
@@ -62,7 +69,7 @@ body {
   font-size: 32px;
   text-decoration: none;
   color: hsl(356, 100%, 66%);
-  margin-right: 10%;
+  margin-right: 5%;
 }
 
 
@@ -226,7 +233,7 @@ body {
 .post-title {
   font-weight: 500;
   font-size: 16px;
-  margin-top: 16px;
+  margin-top: 12px;
   transition: 0.6s opacity;
 }
 
@@ -240,7 +247,6 @@ body {
 }
 
 .post-description {
-  margin-top: 16px;
   font-size: 12px;
   line-height: 1.5em;
 }
